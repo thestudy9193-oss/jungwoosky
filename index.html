@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정우종합중기(굴절스카이,스카이차전문)</title>
+    <meta name="description" content="일반 스카이차가 닿지 않는 사각지대, 굴절스카이와 교량배수 전문 정우종합중기가 해결합니다. 장애물 회피, 공장 내부, 교량 하부, 전국 24시간 출동.">
+    <meta name="keywords" content="정우종합중기, 정우스카이차, 굴절스카이, 스카이차전문, 교량배수, 교량하부점검, 공장고소작업, 시흥스카이차">
+    <meta name="author" content="정우종합중기">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="정우종합중기(굴절스카이,스카이차전문)">
+    <meta property="og:title" content="정우종합중기(굴절스카이,스카이차전문)">
+    <meta property="og:description" content="꺾이고, 휘어지고, 넘어가는 굴절스카이와 교량배수 전문. 일반 장비가 포기한 현장도 정우종합중기가 해결합니다.">
+    <meta property="og:image" content="썸네일.jpg">
+    <meta property="og:image:alt" content="정우종합중기 굴절스카이 스카이차 전문 썸네일">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="정우종합중기(굴절스카이,스카이차전문)">
+    <meta name="twitter:description" content="일반 스카이차가 닿지 않는 사각지대, 굴절스카이와 교량배수 전문 정우종합중기가 해결합니다.">
+    <meta name="twitter:image" content="썸네일.jpg">
+    <link rel="image_src" href="썸네일.jpg">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "정우종합중기(굴절스카이,스카이차전문)",
+        "image": "썸네일.jpg",
+        "description": "굴절스카이, 스카이차, 교량배수, 공장 내부 고소작업 전문 업체",
+        "telephone": "010-8455-0039",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "금오로 336",
+            "addressLocality": "시흥시",
+            "addressRegion": "경기",
+            "addressCountry": "KR"
+        },
+        "areaServed": "전국",
+        "openingHours": "Mo-Su 00:00-23:59"
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Noto Sans KR -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans KR"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#002C5F', // 남색 (Navy - 헤더, 푸터 등)
+                            primary: '#0059A9', // 파란색 (Blue - 포인트 컬러)
+                            accent: '#FFD100', // 노란색 (Yellow - 강조, 버튼)
+                            accentHover: '#E5BC00', // 진한 노란색 (Hover 효과)
+                            naver: '#03C75A' // 네이버 공식 그린 컬러
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.82)), url('헤더.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero-video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media (max-width: 640px) {
+            .hero-bg {
+                background-position: center top;
+            }
+            .mobile-tight {
+                word-break: keep-all;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <header class="bg-brand-dark text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <i class="fa-solid fa-truck-monster text-brand-accent text-2xl md:text-3xl mr-2 md:mr-3"></i>
+                    <span class="font-bold text-xl md:text-2xl tracking-tight">정우종합중기</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#intro" class="text-gray-300 hover:text-brand-accent transition-colors font-medium">회사소개</a>
+                    <a href="#services" class="text-gray-300 hover:text-brand-accent transition-colors font-medium">주요작업</a>
+                    <a href="#info" class="text-gray-300 hover:text-brand-accent transition-colors font-medium">오시는길</a>
+                    <a href="#blog" class="text-gray-300 hover:text-brand-accent transition-colors font-medium">작업후기(블로그)</a>
+                </nav>
+
+                <!-- Call Button (Desktop) -->
+                <div class="hidden md:flex items-center">
+                    <a href="tel:010-8455-0039" class="bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-bold py-2 px-5 rounded-full flex items-center transition-all transform hover:scale-105 shadow-md">
+                        <i class="fa-solid fa-phone-volume mr-2"></i> 010-8455-0039
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-primary border-t border-gray-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#intro" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-brand-accent hover:bg-gray-800 rounded-md">회사소개</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-brand-accent hover:bg-gray-800 rounded-md">주요작업</a>
+                <a href="#info" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-brand-accent hover:bg-gray-800 rounded-md">오시는길</a>
+                <a href="#blog" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-brand-accent hover:bg-gray-800 rounded-md">작업후기(블로그)</a>
+                <a href="tel:010-8455-0039" class="block mt-4 text-center bg-brand-accent text-brand-dark font-bold px-3 py-3 rounded-md">
+                    <i class="fa-solid fa-phone mr-2"></i> 전화 상담하기
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="hero-bg relative min-h-[calc(100svh-64px)] md:h-[80vh] md:min-h-[600px] flex items-center justify-center text-center py-16 md:py-0 overflow-hidden">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="헤더.jpg">
+            <source src="헤더영상.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-brand-dark/60"></div>
+        <div class="relative z-10 px-4 sm:px-6 lg:px-8 w-full max-w-5xl">
+            <span class="inline-block py-1 px-3 rounded-full bg-brand-accent text-brand-dark text-xs sm:text-sm font-bold mb-5 md:mb-6 animate-bounce">
+                전국 어디든 24시 신속 출동
+            </span>
+            <h1 class="mobile-tight text-3xl sm:text-5xl md:text-6xl font-extrabold text-white mb-5 md:mb-6 leading-tight text-shadow">
+                일반 장비로는 불가능했던 작업 <br/>
+                <span class="text-brand-accent">정우종합중기</span>가 해결합니다
+            </h1>
+            <p class="mobile-tight text-base sm:text-xl text-gray-200 mb-8 md:mb-10 font-light max-w-3xl mx-auto leading-relaxed">
+                타 업체가 포기한 현장 100% 해결. 높은 층고 공장 내부부터 굴절로 꺾어 닿는 교량 사각지대까지, 못 하는 작업 없는 만능 해결사.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-6">
+                <a href="tel:010-8455-0039" class="w-full sm:w-auto bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-bold text-base sm:text-lg py-3.5 sm:py-4 px-6 sm:px-8 rounded-lg shadow-lg transition-transform transform hover:-translate-y-1 flex items-center justify-center">
+                    <i class="fa-solid fa-phone text-xl mr-2"></i> 긴급 출동 요청
+                </a>
+                <a href="#blog" class="w-full sm:w-auto bg-transparent border-2 border-white hover:bg-white hover:text-brand-dark text-white font-bold text-base sm:text-lg py-3.5 sm:py-4 px-6 sm:px-8 rounded-lg shadow-lg transition-colors flex items-center justify-center">
+                    <i class="fa-brands fa-blogger text-xl mr-2"></i> 작업 현장 보기
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="intro" class="relative overflow-hidden py-14 sm:py-20 bg-white">
+        <div class="absolute -left-24 top-12 w-72 h-72 rounded-full border border-gray-200 opacity-50"></div>
+        <div class="absolute left-10 top-32 w-36 h-36 rounded-full border border-gray-200 opacity-40"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-12 items-center">
+                <div>
+                    <span class="inline-flex items-center bg-brand-accent text-brand-dark text-sm font-bold px-3 py-1 rounded-full mb-5">
+                        정우스카이차 소개
+                    </span>
+                    <h2 class="mobile-tight text-2xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-5">
+                        일반 스카이차는 안 된다고<br class="hidden sm:block">
+                        철수했나요?
+                    </h2>
+                    <p class="mobile-tight text-lg sm:text-xl text-brand-primary font-bold leading-relaxed mb-4">
+                        꺾이고, 휘어지고, 넘어가는 굴절스카이 & 교량배수 전문 정우종합중기입니다.
+                    </p>
+                    <p class="mobile-tight text-sm sm:text-base text-gray-700 leading-relaxed max-w-xl">
+                        처마, 전깃줄, 장애물, 교량 하부처럼 직선 장비가 닿지 않는 현장도 포기하지 마세요. 관절처럼 꺾이는 굴절스카이로 사각지대까지 진입 방법을 찾아드립니다.
+                    </p>
+                    <div class="mt-7 flex flex-col sm:flex-row gap-3">
+                        <a href="tel:010-8455-0039" class="inline-flex items-center justify-center bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-bold px-6 py-3 rounded-lg shadow transition-colors">
+                            <i class="fa-solid fa-phone mr-2"></i> 전화하기
+                        </a>
+                        <a href="#info" class="inline-flex items-center justify-center bg-brand-dark hover:bg-brand-primary text-white font-bold px-6 py-3 rounded-lg shadow transition-colors">
+                            <i class="fa-solid fa-camera mr-2 text-brand-accent"></i> 사진 보내고 상담
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-5 sm:p-6">
+                        <div class="w-12 h-12 rounded-lg bg-brand-dark text-brand-accent flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-route text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">장애물 회피</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">캐노피, 펜스, 화단처럼 앞을 막는 구조물을 ㄱ자, Z자 각도로 넘어 작업 위치에 접근합니다.</p>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-5 sm:p-6">
+                        <div class="w-12 h-12 rounded-lg bg-brand-dark text-brand-accent flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-industry text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">공장 내부 특화</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">복잡한 배관, 기계설비, 전선 사이를 피해 천장과 뒷공간까지 안정적으로 커버합니다.</p>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-5 sm:p-6">
+                        <div class="w-12 h-12 rounded-lg bg-brand-dark text-brand-accent flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-bridge-water text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">교량배수 전문</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">다리 밑, 난간 아래, 아래 방향으로 꺾는 마이너스 작업까지 현장 각도에 맞춥니다.</p>
+                    </div>
+                    <div class="bg-brand-dark rounded-xl p-5 sm:p-6 text-white">
+                        <div class="w-12 h-12 rounded-lg bg-white/10 text-brand-accent flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-mobile-screen-button text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">사진 한 장 상담</h3>
+                        <p class="text-sm text-blue-100 leading-relaxed">현장 사진을 보내주시면 굴절 각도와 진입 가능 여부를 빠르게 안내해 드립니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-brand-primary rounded-xl p-5 sm:p-7 text-white">
+                <div class="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-5 lg:gap-8 items-center">
+                    <div>
+                        <h3 class="mobile-tight text-xl sm:text-2xl font-bold mb-2 text-brand-accent">작업 가능 범위</h3>
+                        <p class="mobile-tight text-sm text-blue-50 leading-relaxed">직선 장비가 철수한 현장도 구조를 보고 방법을 찾습니다.</p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                        <div class="flex items-start"><i class="fa-solid fa-check text-brand-accent mt-1 mr-2"></i><span>캐노피, 펜스, 화단 너머 외벽</span></div>
+                        <div class="flex items-start"><i class="fa-solid fa-check text-brand-accent mt-1 mr-2"></i><span>교량 배수, 교량 하부 점검</span></div>
+                        <div class="flex items-start"><i class="fa-solid fa-check text-brand-accent mt-1 mr-2"></i><span>공장 배관, 설비 상부, 협소 실내</span></div>
+                        <div class="flex items-start"><i class="fa-solid fa-check text-brand-accent mt-1 mr-2"></i><span>전신주와 간판이 얽힌 도심 골목</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-14 sm:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 sm:mb-16">
+                <h2 class="mobile-tight text-2xl sm:text-3xl font-bold text-gray-900 mb-4">정우종합중기 주요 서비스</h2>
+                <div class="w-24 h-1 bg-brand-accent mx-auto mb-6"></div>
+                <p class="mobile-tight text-gray-600">안전하고 신속한 작업으로 고객님의 현장을 책임집니다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 sm:p-8 text-center shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-brand-dark rounded-full flex items-center justify-center mx-auto mb-5 sm:mb-6 group-hover:bg-brand-accent transition-colors">
+                        <i class="fa-solid fa-bolt text-2xl text-white group-hover:text-brand-dark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">24시 신속 출동</h3>
+                    <p class="text-gray-600 text-sm">전국 어디든 필요한 순간에 가장 빠르게 도착하여 작업을 지원합니다.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 sm:p-8 text-center shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-brand-dark rounded-full flex items-center justify-center mx-auto mb-5 sm:mb-6 group-hover:bg-brand-accent transition-colors">
+                        <i class="fa-solid fa-camera text-2xl text-white group-hover:text-brand-dark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">1분 견적 OK</h3>
+                    <p class="text-gray-600 text-sm">현장 사진 한 장만 보내주시면 즉각적이고 투명한 견적을 산출해 드립니다.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 sm:p-8 text-center shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-brand-dark rounded-full flex items-center justify-center mx-auto mb-5 sm:mb-6 group-hover:bg-brand-accent transition-colors">
+                        <i class="fa-solid fa-bridge-water text-2xl text-white group-hover:text-brand-dark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">교량 하부/점검 전문</h3>
+                    <p class="text-gray-600 text-sm">교량 하부 진입 및 배수관 청소 등 특수 굴절 작업에 특화되어 있습니다.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-gray-50 rounded-xl p-6 sm:p-8 text-center shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-brand-dark rounded-full flex items-center justify-center mx-auto mb-5 sm:mb-6 group-hover:bg-brand-accent transition-colors">
+                        <i class="fa-solid fa-industry text-2xl text-white group-hover:text-brand-dark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">공장 내부 굴절 작업</h3>
+                    <p class="text-gray-600 text-sm">층고가 높은 공장 내부나 사각지대 등 까다로운 환경도 100% 해결합니다.</p>
+                </div>
+            </div>
+            
+            <!-- Features list -->
+            <div class="mt-10 sm:mt-16 bg-brand-dark rounded-xl sm:rounded-2xl p-6 sm:p-12 text-white shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-brand-accent rounded-full opacity-20 blur-2xl"></div>
+                <h3 class="mobile-tight text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-center">정우종합중기가 특별한 이유</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-check text-brand-accent mt-1 mr-3 text-lg"></i>
+                        <p class="mobile-tight text-base sm:text-lg">타 업체 포기 현장 100% 완벽 해결</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-check text-brand-accent mt-1 mr-3 text-lg"></i>
+                        <p class="mobile-tight text-base sm:text-lg">못 하는 작업 없는 만능 현장 해결사</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-check text-brand-accent mt-1 mr-3 text-lg"></i>
+                        <p class="mobile-tight text-base sm:text-lg">굴절로 꺾어 닿는 교량의 미세 사각지대 공략</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-check text-brand-accent mt-1 mr-3 text-lg"></i>
+                        <p class="mobile-tight text-base sm:text-lg">다양한 최신 굴절스카이차 장비 자체 보유</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="py-14 sm:py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-12">
+                <div>
+                    <h2 class="mobile-tight text-2xl sm:text-3xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fa-brands fa-neos text-brand-naver mr-3 text-3xl sm:text-4xl"></i> 네이버 블로그 작업 후기
+                    </h2>
+                    <p class="mobile-tight text-gray-600">정우종합중기의 생생한 현장 작업 스토리를 확인해보세요.</p>
+                </div>
+                <a href="https://blog.naver.com/jeongwooenc22" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center text-brand-primary hover:text-brand-accent font-semibold transition-colors mt-4 md:mt-0">
+                    블로그 전체보기 <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Blog Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
+                
+                <!-- Blog Post 1 -->
+                <a href="https://blog.naver.com/jeongwooenc22/224302031809" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
+                    <div class="h-44 sm:h-48 bg-gray-200 overflow-hidden relative">
+                        <img src="https://blogthumb.pstatic.net/MjAyNjA1MzFfMTg5/MDAxNzgwMjM0OTAzMDg2.0TBMaRd0MMsLpoeWronBpqGGRwEqbx_JSul0rZiJVgkg.2VpQq8ntGQG65urdkYJcHo2hsnxTtCtPm6vmq_bF23Qg.JPEG/%B0%E6%BB%EA_%BD%BA%C4%AB%C0%CC%C2%F7_%BD%E6%B3%D7%C0%CF.jpg?type=w2" alt="70m 굴절스카이 판넬 후레싱 마감 작업 후기 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-brand-dark/10 group-hover:bg-brand-dark/0 transition-colors"></div>
+                        <div class="absolute top-4 left-4 bg-brand-naver text-white text-xs font-bold px-3 py-1 rounded-full flex items-center shadow-md">
+                            <i class="fa-brands fa-neos mr-1"></i> Blog
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-primary transition-colors line-clamp-2">
+                                70m 굴절스카이 판넬 후레싱 마감 작업 후기
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3">
+                                타 업체에서 진입을 포기했던 태백 풍력발전소 현장입니다. 정우종합중기의 70m 굴절스카이차를 투입하여 안전하게 옹벽 보수 작업을 마무리했습니다.
+                            </p>
+                        </div>
+                        <div class="mt-4 text-brand-primary font-semibold text-sm flex items-center">
+                            자세히 보기 <i class="fa-solid fa-chevron-right ml-1 text-xs"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Post 2 -->
+                <a href="https://blog.naver.com/jeongwooenc22/224299395383" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
+                    <div class="h-44 sm:h-48 bg-gray-200 overflow-hidden relative">
+                        <img src="https://blogthumb.pstatic.net/MjAyNjA1MjhfMzkg/MDAxNzc5OTcxMzI5MDMx.eGTdCNi1MWbsUXOAH2dPgb4xIz7nUmTchZN0AkbsLA4g.xVmXuongvsmodZcPr21ViZWcJhD5vcYsYFXbd9HUi90g.JPEG/%BA%CE%BB%EA%BD%BA%C4%AB%C0%CC.jpg?type=w2" alt="부산 굴절스카이 작업 기준 및 금액 안내 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-brand-dark/10 group-hover:bg-brand-dark/0 transition-colors"></div>
+                        <div class="absolute top-4 left-4 bg-brand-naver text-white text-xs font-bold px-3 py-1 rounded-full flex items-center shadow-md">
+                            <i class="fa-brands fa-neos mr-1"></i> Blog
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-primary transition-colors line-clamp-2">
+                                부산 굴절스카이 작업 기준 및 금액 안내
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3">
+                                높은 층고와 복잡한 구조로 인해 일반 장비 진입이 어려웠던 부산 현장. 굴절 특수 기능을 활용하여 사각지대 없이 타일 보수를 완벽히 수행했습니다.
+                            </p>
+                        </div>
+                        <div class="mt-4 text-brand-primary font-semibold text-sm flex items-center">
+                            자세히 보기 <i class="fa-solid fa-chevron-right ml-1 text-xs"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Post 3 -->
+                <a href="https://blog.naver.com/jeongwooenc22/224298350721" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
+                    <div class="h-44 sm:h-48 bg-gray-200 overflow-hidden relative">
+                        <img src="https://blogthumb.pstatic.net/MjAyNjA1MjdfMjE2/MDAxNzc5ODg2Mzk1MTU3.3tRNkcgBt9XiRZ8KOpMwybs_DmwO95dhlgb0McxRZEwg.MTP6POS2_9w7OPfwYBWFHPRtH0ns31cgFhCT9Xt2oEgg.JPEG/%B1%BC%C0%FD%BD%BA%C4%AB%C0%CC_%BD%E6%B3%D7%C0%CF.jpg?type=w2" alt="굴절스카이 5톤 장비 선택 기준 및 비용 안내 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-brand-dark/10 group-hover:bg-brand-dark/0 transition-colors"></div>
+                        <div class="absolute top-4 left-4 bg-brand-naver text-white text-xs font-bold px-3 py-1 rounded-full flex items-center shadow-md">
+                            <i class="fa-brands fa-neos mr-1"></i> Blog
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-primary transition-colors line-clamp-2">
+                                굴절스카이 5톤 언제 필요할까? 장비 선택 기준 및 비용 안내
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3">
+                                일반적인 방식으로는 닿지 않는 교량 하부 사각지대 진입. 굴절스카이차의 압도적인 성능으로 안전 진단 및 배수관 청소를 신속하게 완료했습니다.
+                            </p>
+                        </div>
+                        <div class="mt-4 text-brand-primary font-semibold text-sm flex items-center">
+                            자세히 보기 <i class="fa-solid fa-chevron-right ml-1 text-xs"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Post 4 (New) -->
+                <a href="https://blog.naver.com/jeongwooenc22/224297245590" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
+                    <div class="h-44 sm:h-48 bg-gray-200 overflow-hidden relative">
+                        <img src="https://blogthumb.pstatic.net/MjAyNjA1MjZfMTAx/MDAxNzc5Nzk4ODA4MzAw.VhedDgia_JRiqjo-M6B83eY33nvsoF9HyJvXdrDpQ34g.wkdAr9iDaaYFiUXbdUl1MrietfuUXguG67MZtPryx68g.JPEG/%B1%BC%C0%FD%BD%BA%C4%AB%C0%CC__%BD%E6%B3%D7%C0%CF.jpg?type=w2" alt="굴절스카이 3.5톤 가격 안내 및 선택 기준 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-brand-dark/10 group-hover:bg-brand-dark/0 transition-colors"></div>
+                        <div class="absolute top-4 left-4 bg-brand-naver text-white text-xs font-bold px-3 py-1 rounded-full flex items-center shadow-md">
+                            <i class="fa-brands fa-neos mr-1"></i> Blog
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-primary transition-colors line-clamp-2">
+                                굴절스카이 3.5톤 가격 안내 및 선택 기준
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3">
+                                층고가 높고 장애물이 많은 공장 내부 작업입니다. 굴절 붐을 활용하여 복잡한 구조물 사이를 통과, 안전하게 도장 및 보수 작업을 마쳤습니다.
+                            </p>
+                        </div>
+                        <div class="mt-4 text-brand-primary font-semibold text-sm flex items-center">
+                            자세히 보기 <i class="fa-solid fa-chevron-right ml-1 text-xs"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Post 5 (New) -->
+                <a href="https://blog.naver.com/jeongwooenc22/224285739728" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
+                    <div class="h-44 sm:h-48 bg-gray-200 overflow-hidden relative">
+                        <img src="https://blogthumb.pstatic.net/MjAyNjA1MTRfMTY2/MDAxNzc4NzYxODkzODA5.sldYRJjEP9mNea3H4PDcrMptDS8p2K0jhui6An4TvW8g.FMlNAt7l1qeY_VqnGD_UBUF9-l7ENE2-aINrvk2flZ4g.JPEG/%B1%BC%C0%FD%BD%BA%C4%AB%C0%CC.jpg?type=w2" alt="공장 고소 작업 굴절스카이 선택 기준과 비용 안내 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-brand-dark/10 group-hover:bg-brand-dark/0 transition-colors"></div>
+                        <div class="absolute top-4 left-4 bg-brand-naver text-white text-xs font-bold px-3 py-1 rounded-full flex items-center shadow-md">
+                            <i class="fa-brands fa-neos mr-1"></i> Blog
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-primary transition-colors line-clamp-2">
+                                공장 고소 작업 굴절스카이 선택 기준과 비용 안내
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3">
+                                하천을 가로지르는 고가도로 하부 작업. 차량 통제 없이 다리 위에서 아래로 굴절 붐을 꺾어 내려가 정밀 안전진단과 보수를 진행했습니다.
+                            </p>
+                        </div>
+                        <div class="mt-4 text-brand-primary font-semibold text-sm flex items-center">
+                            자세히 보기 <i class="fa-solid fa-chevron-right ml-1 text-xs"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Post 6 (New) -->
+                <a href="https://blog.naver.com/jeongwooenc22/224284564627" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
+                    <div class="h-44 sm:h-48 bg-gray-200 overflow-hidden relative">
+                        <img src="https://blogthumb.pstatic.net/MjAyNjA1MTNfMzMg/MDAxNzc4Njc0MjA1MDc1.9bfV3BMIG2iYvz8xPU-Ki6aj2WuYnJCzsiIcDCOkb5Ig.iUCc5-J3wmAetj-YN1NxTWIF95fBesnzS25FRi7TYY4g.JPEG/%BC%DB%B5%B5_%BD%BA%C4%AB%C0%CC%C2%F7_%BD%E6%B3%D7%C0%CF.jpg?type=w2" alt="5톤 굴절스카이차 유리 보수 조명 작업 후기 및 임대료 안내 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-brand-dark/10 group-hover:bg-brand-dark/0 transition-colors"></div>
+                        <div class="absolute top-4 left-4 bg-brand-naver text-white text-xs font-bold px-3 py-1 rounded-full flex items-center shadow-md">
+                            <i class="fa-brands fa-neos mr-1"></i> Blog
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-primary transition-colors line-clamp-2">
+                                5톤 굴절스카이차 유리 보수 조명 작업 후기 및 임대료 안내
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3">
+                                로프 작업이 위험하거나 스카이차 진입 공간이 협소한 건물. 굴절스카이의 긴 작업 반경을 이용하여 안전하게 외벽 코킹을 마무리했습니다.
+                            </p>
+                        </div>
+                        <div class="mt-4 text-brand-primary font-semibold text-sm flex items-center">
+                            자세히 보기 <i class="fa-solid fa-chevron-right ml-1 text-xs"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="mt-8 text-center md:hidden">
+                <a href="https://blog.naver.com/jeongwooenc22" target="_blank" rel="noopener noreferrer" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-lg transition-colors w-full">
+                    블로그에서 더 많은 후기 보기
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="py-14 sm:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gray-50 rounded-xl sm:rounded-2xl p-5 sm:p-12 shadow-inner border border-gray-200">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                    
+                    <!-- Info details -->
+                    <div>
+                        <h2 class="mobile-tight text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 border-b-2 border-brand-accent inline-block pb-2">업체 정보 및 오시는 길</h2>
+                        
+                        <div class="space-y-5 sm:space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-11 h-11 sm:w-12 sm:h-12 bg-white rounded-full shadow flex items-center justify-center flex-shrink-0 mr-3 sm:mr-4">
+                                    <i class="fa-solid fa-map-location-dot text-brand-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 text-lg">주소</h4>
+                                    <p class="text-gray-600 mt-1">경기 시흥시 금오로 336</p>
+                                    <p class="text-sm text-gray-500 mt-1">정우종합중기</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-11 h-11 sm:w-12 sm:h-12 bg-white rounded-full shadow flex items-center justify-center flex-shrink-0 mr-3 sm:mr-4">
+                                    <i class="fa-solid fa-clock text-brand-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 text-lg">영업시간</h4>
+                                    <p class="text-gray-600 mt-1">24시간 영업 <span class="bg-brand-primary text-white text-xs font-bold px-2 py-1 rounded ml-2">연중무휴</span></p>
+                                    <p class="text-sm text-gray-500 mt-1">심야 및 긴급 출동 항시 대기</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-11 h-11 sm:w-12 sm:h-12 bg-white rounded-full shadow flex items-center justify-center flex-shrink-0 mr-3 sm:mr-4">
+                                    <i class="fa-solid fa-phone text-brand-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 text-lg">전화번호</h4>
+                                    <p class="text-gray-600 mt-1 text-xl font-bold">
+                                        <a href="tel:010-8455-0039" class="hover:text-brand-accent transition-colors">010-8455-0039</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-11 h-11 sm:w-12 sm:h-12 bg-white rounded-full shadow flex items-center justify-center flex-shrink-0 mr-3 sm:mr-4">
+                                    <i class="fa-solid fa-square-parking text-brand-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 text-lg">편의 제공</h4>
+                                    <div class="flex flex-wrap gap-2 mt-2">
+                                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">방문접수/출장</span>
+                                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">대기공간</span>
+                                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">간편결제</span>
+                                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">주차 가능</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map -->
+                    <div class="relative h-72 lg:h-auto min-h-[320px] sm:min-h-[360px] rounded-xl overflow-hidden shadow-lg border-4 border-white bg-gray-300">
+                        <iframe
+                            title="정우종합중기 위치 지도"
+                            src="https://maps.google.com/maps?q=%EA%B2%BD%EA%B8%B0%20%EC%8B%9C%ED%9D%A5%EC%8B%9C%20%EA%B8%88%EC%98%A4%EB%A1%9C%20336%20%EC%A0%95%EC%9A%B0%EC%A2%85%ED%95%A9%EC%A4%91%EA%B8%B0&output=embed"
+                            class="absolute inset-0 w-full h-full"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                        <a href="https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%8B%9C%ED%9D%A5%EC%8B%9C%20%EA%B8%88%EC%98%A4%EB%A1%9C%20336" target="_blank" rel="noopener noreferrer" class="absolute left-3 right-3 sm:left-4 sm:right-auto bottom-3 sm:bottom-4 inline-flex items-center justify-center bg-brand-dark text-white font-bold text-sm sm:text-base px-4 py-3 rounded-lg shadow-lg hover:bg-brand-primary transition-colors">
+                            <i class="fa-solid fa-map-location-dot mr-2 text-brand-accent"></i> 네이버 지도에서 보기
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-gray-300 py-10 sm:py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-7 sm:gap-8">
+                <!-- Brand Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fa-solid fa-truck-monster text-brand-accent text-2xl mr-2"></i>
+                        <span class="font-bold text-xl text-white">정우종합중기</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-4 leading-relaxed">
+                        일반 장비로는 불가능했던 작업, 정우종합중기가 해결합니다. 타 업체 포기 현장 100% 해결, 못 하는 작업 없는 만능 해결사.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">바로가기</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#intro" class="hover:text-brand-accent transition-colors">회사소개</a></li>
+                        <li><a href="#services" class="hover:text-brand-accent transition-colors">주요작업 (굴절스카이)</a></li>
+                        <li><a href="#info" class="hover:text-brand-accent transition-colors">오시는길 / 문의</a></li>
+                        <li><a href="https://blog.naver.com/jeongwooenc22" target="_blank" class="hover:text-brand-accent transition-colors">네이버 블로그 가기</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">고객센터</h4>
+                    <p class="text-xl sm:text-2xl font-bold text-brand-accent mb-2">
+                        <a href="tel:010-8455-0039" class="hover:text-white transition-colors">010-8455-0039</a>
+                    </p>
+                    <p class="text-sm text-gray-400">365일 24시간 연중무휴 출동 대기</p>
+                    <p class="text-sm text-gray-400 mt-2">주소: 경기 시흥시 금오로 336</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 sm:mt-10 pt-6 sm:pt-8 text-xs sm:text-sm text-center text-gray-500">
+                <p>&copy; 2026 정우종합중기 (굴절스카이차). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const links = menu.querySelectorAll('a');
+
+            // Toggle mobile menu
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
