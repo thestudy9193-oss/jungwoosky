@@ -362,7 +362,7 @@
             </div>
 
             <!-- Blog Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
+            <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
                 
                 <!-- Blog Post 1 -->
                 <a href="https://blog.naver.com/jeongwooenc22/224302031809" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
@@ -657,6 +657,36 @@
                     menu.classList.add('hidden');
                 });
             });
+
+            const blogGrid = document.getElementById('blog-grid');
+            const renderBlogPosts = (posts) => {
+                if (!blogGrid || !Array.isArray(posts) || posts.length === 0) return;
+                blogGrid.innerHTML = posts.slice(0, 6).map((post) => `
+                    <a href="${post.link}" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
+                        <div class="h-44 sm:h-48 bg-gray-200 overflow-hidden relative">
+                            <img src="${post.image}" alt="${post.title} 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-brand-dark/10 group-hover:bg-brand-dark/0 transition-colors"></div>
+                            <div class="absolute top-4 left-4 bg-brand-naver text-white text-xs font-bold px-3 py-1 rounded-full flex items-center shadow-md">
+                                <i class="fa-brands fa-neos mr-1"></i> Blog
+                            </div>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-primary transition-colors line-clamp-2">${post.title}</h3>
+                                <p class="text-gray-600 text-sm line-clamp-3">${post.description || '정우종합중기의 현장 작업 후기를 확인해보세요.'}</p>
+                            </div>
+                            <div class="mt-4 text-brand-primary font-semibold text-sm flex items-center">
+                                자세히 보기 <i class="fa-solid fa-chevron-right ml-1 text-xs"></i>
+                            </div>
+                        </div>
+                    </a>
+                `).join('');
+            };
+
+            fetch('blog-posts.json', { cache: 'no-store' })
+                .then((response) => response.ok ? response.json() : null)
+                .then((posts) => renderBlogPosts(posts))
+                .catch(() => {});
         });
     </script>
 </body>
