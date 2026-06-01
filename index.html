@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -89,6 +89,31 @@
             height: 100%;
             object-fit: cover;
         }
+        @keyframes heroFadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(22px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hero-animate {
+            opacity: 0;
+            animation: heroFadeUp 0.85s ease-out forwards;
+        }
+        .hero-delay-1 { animation-delay: 0.15s; }
+        .hero-delay-2 { animation-delay: 0.35s; }
+        .hero-delay-3 { animation-delay: 0.55s; }
+        .hero-delay-4 { animation-delay: 0.75s; }
+        @media (prefers-reduced-motion: reduce) {
+            .hero-animate {
+                opacity: 1;
+                animation: none;
+                transform: none;
+            }
+        }
         @media (max-width: 640px) {
             .hero-bg {
                 background-position: center top;
@@ -154,17 +179,17 @@
         </video>
         <div class="absolute inset-0 bg-brand-dark/60"></div>
         <div class="relative z-10 px-4 sm:px-6 lg:px-8 w-full max-w-5xl">
-            <span class="inline-block py-1 px-3 rounded-full bg-brand-accent text-brand-dark text-xs sm:text-sm font-bold mb-5 md:mb-6 animate-bounce">
+            <span class="hero-animate hero-delay-1 inline-block py-1 px-3 rounded-full bg-brand-accent text-brand-dark text-xs sm:text-sm font-bold mb-5 md:mb-6">
                 전국 어디든 24시 신속 출동
             </span>
-            <h1 class="mobile-tight text-3xl sm:text-5xl md:text-6xl font-extrabold text-white mb-5 md:mb-6 leading-tight text-shadow">
-                일반 장비로는 불가능했던 작업 <br/>
+            <h1 class="hero-animate hero-delay-2 mobile-tight text-3xl sm:text-5xl md:text-6xl font-extrabold text-white mb-5 md:mb-6 leading-tight text-shadow">
+                일반 장비로는 <br class="sm:hidden">불가능했던 작업 <br/>
                 <span class="text-brand-accent">정우종합중기</span>가 해결합니다
             </h1>
-            <p class="mobile-tight text-base sm:text-xl text-gray-200 mb-8 md:mb-10 font-light max-w-3xl mx-auto leading-relaxed">
+            <p class="hero-animate hero-delay-3 mobile-tight text-base sm:text-xl text-gray-200 mb-8 md:mb-10 font-light max-w-3xl mx-auto leading-relaxed">
                 타 업체가 포기한 현장 100% 해결. 높은 층고 공장 내부부터 굴절로 꺾어 닿는 교량 사각지대까지, 못 하는 작업 없는 만능 해결사.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-6">
+            <div class="hero-animate hero-delay-4 flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-6">
                 <a href="tel:010-8455-0039" class="w-full sm:w-auto bg-brand-accent hover:bg-brand-accentHover text-brand-dark font-bold text-base sm:text-lg py-3.5 sm:py-4 px-6 sm:px-8 rounded-lg shadow-lg transition-transform transform hover:-translate-y-1 flex items-center justify-center">
                     <i class="fa-solid fa-phone text-xl mr-2"></i> 긴급 출동 요청
                 </a>
@@ -342,7 +367,7 @@
                 <!-- Blog Post 1 -->
                 <a href="https://blog.naver.com/jeongwooenc22/224302031809" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
                     <div class="h-44 sm:h-48 bg-gray-200 overflow-hidden relative">
-                        <img src="https://blogthumb.pstatic.net/MjAyNjA1MzFfMTg5/MDAxNzgwMjM0OTAzMDg2.0TBMaRd0MMsLpoeWronBpqGGRwEqbx_JSul0rZiJVgkg.2VpQq8ntGQG65urdkYJcHo2hsnxTtCtPm6vmq_bF23Qg.JPEG/%B0%E6%BB%EA_%BD%BA%C4%AB%C0%CC%C2%F7_%BD%E6%B3%D7%C0%CF.jpg?type=w2" alt="70m 굴절스카이 판넬 후레싱 마감 작업 후기 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="blog-thumb-1.jpg" alt="70m 굴절스카이 판넬 후레싱 마감 작업 후기 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-brand-dark/10 group-hover:bg-brand-dark/0 transition-colors"></div>
                         <div class="absolute top-4 left-4 bg-brand-naver text-white text-xs font-bold px-3 py-1 rounded-full flex items-center shadow-md">
                             <i class="fa-brands fa-neos mr-1"></i> Blog
@@ -366,7 +391,7 @@
                 <!-- Blog Post 2 -->
                 <a href="https://blog.naver.com/jeongwooenc22/224299395383" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
                     <div class="h-44 sm:h-48 bg-gray-200 overflow-hidden relative">
-                        <img src="https://blogthumb.pstatic.net/MjAyNjA1MjhfMzkg/MDAxNzc5OTcxMzI5MDMx.eGTdCNi1MWbsUXOAH2dPgb4xIz7nUmTchZN0AkbsLA4g.xVmXuongvsmodZcPr21ViZWcJhD5vcYsYFXbd9HUi90g.JPEG/%BA%CE%BB%EA%BD%BA%C4%AB%C0%CC.jpg?type=w2" alt="부산 굴절스카이 작업 기준 및 금액 안내 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="blog-thumb-2.jpg" alt="부산 굴절스카이 작업 기준 및 금액 안내 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-brand-dark/10 group-hover:bg-brand-dark/0 transition-colors"></div>
                         <div class="absolute top-4 left-4 bg-brand-naver text-white text-xs font-bold px-3 py-1 rounded-full flex items-center shadow-md">
                             <i class="fa-brands fa-neos mr-1"></i> Blog
@@ -390,7 +415,7 @@
                 <!-- Blog Post 3 -->
                 <a href="https://blog.naver.com/jeongwooenc22/224298350721" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
                     <div class="h-44 sm:h-48 bg-gray-200 overflow-hidden relative">
-                        <img src="https://blogthumb.pstatic.net/MjAyNjA1MjdfMjE2/MDAxNzc5ODg2Mzk1MTU3.3tRNkcgBt9XiRZ8KOpMwybs_DmwO95dhlgb0McxRZEwg.MTP6POS2_9w7OPfwYBWFHPRtH0ns31cgFhCT9Xt2oEgg.JPEG/%B1%BC%C0%FD%BD%BA%C4%AB%C0%CC_%BD%E6%B3%D7%C0%CF.jpg?type=w2" alt="굴절스카이 5톤 장비 선택 기준 및 비용 안내 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="blog-thumb-3.jpg" alt="굴절스카이 5톤 장비 선택 기준 및 비용 안내 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-brand-dark/10 group-hover:bg-brand-dark/0 transition-colors"></div>
                         <div class="absolute top-4 left-4 bg-brand-naver text-white text-xs font-bold px-3 py-1 rounded-full flex items-center shadow-md">
                             <i class="fa-brands fa-neos mr-1"></i> Blog
@@ -414,7 +439,7 @@
                 <!-- Blog Post 4 (New) -->
                 <a href="https://blog.naver.com/jeongwooenc22/224297245590" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
                     <div class="h-44 sm:h-48 bg-gray-200 overflow-hidden relative">
-                        <img src="https://blogthumb.pstatic.net/MjAyNjA1MjZfMTAx/MDAxNzc5Nzk4ODA4MzAw.VhedDgia_JRiqjo-M6B83eY33nvsoF9HyJvXdrDpQ34g.wkdAr9iDaaYFiUXbdUl1MrietfuUXguG67MZtPryx68g.JPEG/%B1%BC%C0%FD%BD%BA%C4%AB%C0%CC__%BD%E6%B3%D7%C0%CF.jpg?type=w2" alt="굴절스카이 3.5톤 가격 안내 및 선택 기준 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="blog-thumb-4.jpg" alt="굴절스카이 3.5톤 가격 안내 및 선택 기준 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-brand-dark/10 group-hover:bg-brand-dark/0 transition-colors"></div>
                         <div class="absolute top-4 left-4 bg-brand-naver text-white text-xs font-bold px-3 py-1 rounded-full flex items-center shadow-md">
                             <i class="fa-brands fa-neos mr-1"></i> Blog
@@ -438,7 +463,7 @@
                 <!-- Blog Post 5 (New) -->
                 <a href="https://blog.naver.com/jeongwooenc22/224285739728" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
                     <div class="h-44 sm:h-48 bg-gray-200 overflow-hidden relative">
-                        <img src="https://blogthumb.pstatic.net/MjAyNjA1MTRfMTY2/MDAxNzc4NzYxODkzODA5.sldYRJjEP9mNea3H4PDcrMptDS8p2K0jhui6An4TvW8g.FMlNAt7l1qeY_VqnGD_UBUF9-l7ENE2-aINrvk2flZ4g.JPEG/%B1%BC%C0%FD%BD%BA%C4%AB%C0%CC.jpg?type=w2" alt="공장 고소 작업 굴절스카이 선택 기준과 비용 안내 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="blog-thumb-5.jpg" alt="공장 고소 작업 굴절스카이 선택 기준과 비용 안내 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-brand-dark/10 group-hover:bg-brand-dark/0 transition-colors"></div>
                         <div class="absolute top-4 left-4 bg-brand-naver text-white text-xs font-bold px-3 py-1 rounded-full flex items-center shadow-md">
                             <i class="fa-brands fa-neos mr-1"></i> Blog
@@ -462,7 +487,7 @@
                 <!-- Blog Post 6 (New) -->
                 <a href="https://blog.naver.com/jeongwooenc22/224284564627" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 flex flex-col h-full border border-gray-100 group">
                     <div class="h-44 sm:h-48 bg-gray-200 overflow-hidden relative">
-                        <img src="https://blogthumb.pstatic.net/MjAyNjA1MTNfMzMg/MDAxNzc4Njc0MjA1MDc1.9bfV3BMIG2iYvz8xPU-Ki6aj2WuYnJCzsiIcDCOkb5Ig.iUCc5-J3wmAetj-YN1NxTWIF95fBesnzS25FRi7TYY4g.JPEG/%BC%DB%B5%B5_%BD%BA%C4%AB%C0%CC%C2%F7_%BD%E6%B3%D7%C0%CF.jpg?type=w2" alt="5톤 굴절스카이차 유리 보수 조명 작업 후기 및 임대료 안내 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="blog-thumb-6.jpg" alt="5톤 굴절스카이차 유리 보수 조명 작업 후기 및 임대료 안내 썸네일" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-brand-dark/10 group-hover:bg-brand-dark/0 transition-colors"></div>
                         <div class="absolute top-4 left-4 bg-brand-naver text-white text-xs font-bold px-3 py-1 rounded-full flex items-center shadow-md">
                             <i class="fa-brands fa-neos mr-1"></i> Blog
@@ -636,3 +661,4 @@
     </script>
 </body>
 </html>
+
